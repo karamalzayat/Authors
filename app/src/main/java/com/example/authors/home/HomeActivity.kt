@@ -38,21 +38,13 @@ class HomeActivity : AppCompatActivity(), OnClickListener {
 
         setupFlowMonitor()
         mViewModel.getAuthors()
+        binding.homeImgLoading.visibility = View.VISIBLE
     }
 
     private fun setupFlowMonitor() {
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                binding.homeImgLoading.visibility = View.VISIBLE
-                mViewModel.uiState.collect { uiState ->
-                    when (uiState) {
-                        is HomeViewModel.StateCommand.Success -> {
-                            binding.homeImgLoading.visibility = View.GONE
-                            adapter.submitList(uiState.authors)
-                        }
-                    }
-                }
-            }
+        mViewModel.statusList.observe(this){
+            binding.homeImgLoading.visibility = View.GONE
+            adapter.submitList(it.toList())
         }
     }
 

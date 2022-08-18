@@ -17,7 +17,7 @@ class AuthorsListAdapter(
     private val onClickListener: OnClickListener
 ) :
     RecyclerView.Adapter<AuthorsListAdapter.ViewHolder>() {
-    lateinit var authors: ArrayList<BaseAdapterItem>
+    var authors: ArrayList<BaseAdapterItem> = arrayListOf()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.recycler_item, parent, false)
@@ -59,7 +59,7 @@ class AuthorsListAdapter(
         val authorName: TextView = authorItem.findViewById(R.id.item_author_name)
     }
 
-    fun submitList(_authors: ArrayList<BaseAdapterItem>) {
+    fun submitList(_authors: List<BaseAdapterItem>) {
         authors.addAll(_authors)
         notifyDataSetChanged()
     }

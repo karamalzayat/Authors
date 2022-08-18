@@ -7,6 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 
 // detecting the base url
@@ -25,10 +26,10 @@ private val retrofit = Retrofit.Builder()
 
 interface AuthorsApiService {
     //this fun responsable for getting the Authors data
-    @GET("/v2/list?page={pageNumber}&limit={limit}")
+    @GET("/v2/list")
     suspend fun getAuthors(
-        @Path("pageNumber") number: Int = 1,
-        @Path("limit") limit: Int = 10
+        @Query("page") number: Int = 1,
+        @Query("limit") limit: Int = 10
     ): List<AuthorModel>
 }
 

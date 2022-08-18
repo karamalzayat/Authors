@@ -2,6 +2,7 @@ package com.example.authors.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.authors.home.AuthorModel
 
@@ -12,6 +13,6 @@ interface AuthorDao {
     @Query("SELECT * FROM Author")
     suspend fun getAll(): List<AuthorModel>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAuthor(authors: List<AuthorModel>)
 }
