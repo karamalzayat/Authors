@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_brand_persimmon">#2a265f</color>
+    <color name="color_brand_second">#204871</color>
+    <color name="color_brand_third">#04b5ad</color>
+
+
+    <!--White degrees-->
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_concrete">#f3f3f3</color>
+    <color name="color_alabaster">#f7f7f7</color>
+    <color name="color_gallery">#efefef</color>
+    <color name="color_alto">#d6d6d6</color>
+    <!--White degrees Ends-->
+
+
+    <!--Grey degrees-->
+    <color name="color_grey">#818181</color>
+    <color name="color_grey_lighter">#bfbfbf</color>
+    <color name="color_grey_light">#8d8d8d</color>
+    <color name="color_grey_dove">#656565</color>
+    <color name="color_grey_dove_40">#40707070</color>
+    <color name="color_grey_dust">#989898</color>
+    <color name="color_grey_scorpion">#575757</color>
+    <color name="color_grey_pumice">#B9BBBA</color>
+    <color name="color_grey_mercury">#e8e8e8</color>
+    <color name="color_grey_mine_shaft">#2a2a2a</color>
+    <color name="color_grey_cod">#0c0c0c</color>
+    <color name="color_grey_cod_trans">#510C0C00</color>
+
+    <color name="line_grey">#3b707070</color>
+    <color name="color_shadow">#29000000</color>
+    <color name="color_black_labels">#1c1e1c</color>
+    <color name="color_grey_message_hint">#707070</color>
+    <!--Grey degrees Ends-->
+
+
+    <!--Black degrees-->
+    <color name="color_black">#FF000000</color>
+    <color name="color_black_58">#94000000</color>
+    <color name="color_black_pearl">#050d1d</color>
+    <!--Black degrees Ends-->
+
+
+    <!--Other degrees-->
+    <color name="purple_200">#FCFCFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

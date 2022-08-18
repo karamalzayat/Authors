@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="transparent_textview">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:fontFamily">@font/akaya_telivigala</item>
+        <item name="android:background">@color/color_grey_cod_trans</item>
+
+    </style>
+</resources>
